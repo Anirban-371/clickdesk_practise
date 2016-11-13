@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+body{
+/*	background-image: url("Student.jpg");
+	background-repeat: no-repeat;*/
+}
+.coursetable tr {
+   border: 1px solid black;
+
+}
+ h3{
+ 	color: #000000;
+ 	font-family: serif;
+ 	float: none;
+ }
+.coursetable th{
+	border: 1px solid black;
+	width:500px;
+	text-align: center;
+}
+.size{
+	width: 405px;
+	text-align: center;
+}
+.formerrorset{
+	color: red;
+	font-size: 12px;
+	border: thin;
+	border-color: red;		
+}
+.formresultset{
+	color: green;
+	font-size: 12px;
+	border: thin;
+	border-color: red;		
+}

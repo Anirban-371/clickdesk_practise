@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Form</title>
+<script type="text/javascript" src="jquery/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="jquery/custom.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<h3>This is a students form page</h3>
+	<form id="form" onsubmit="return false;" method='POST' name='registration'>
+		<div id="errorset">
+		<span id="nameerrorbox" 	class="nameform_error"></span><br>
+		<span id="emailerrorbox" 	class="emailform_error"></span><br>
+		<span id="ageerrorbox" 		class="ageform_error"></span><br>
+		<span id="doberrorbox" 		class="dobform_error"></span><br>
+		<span id="addresserrorbox" 	class="addressform_error"></span><br>
+		</div>
+		<fieldset>
+		<table>
+			<tr>
+				<th>Name:</th>
+				<th><input type="text" name="name" id="name" class="formname" value="name"></th>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<th><input type="text" name="email" id="email" class="formemail" value="email"></th>
+			</tr>
+			<tr>
+				<th>Age:</th>
+				<th><input type="text" name="age" id="age" class="formage" value="age"></th>
+			</tr>
+			<tr>
+				<th>Dob:</th>
+				<th><input type="text" name="dob" id="dob" class="formdob" value="dob"></th>
+			</tr>
+			<tr>
+				<th>Address:</th>
+				<th><input type="text" name="address" id="address" class="formaddress" value="address">
+				</th>
+			</tr>
+			<tr>
+				<th>Courses</th>
+				<th><Button class="add">Add +</Button></th>
+				<th><Button class="substract">Delete -</Button></th>
+			</tr>
+		</table>
+	
+		<table  class="coursetable">
+			<tr class='coursedetail'>
+				<th>Course Name</th>
+				<th>Institute</th>
+				<th>Year</th>
+			</tr>
+		</table>
+		</fieldset>
+		<div id="resultset">
+			<span id="nameresultbox" 	class="nameform_result"></span><br>
+			<span id="emailresultbox" 	class="emailform_result"></span><br>
+			<span id="ageresultbox" 		class="ageform_result"></span><br>
+			<span id="dobresultbox" 		class="dobform_result"></span><br>
+			<span id="addressresultbox" 	class="addressform_result"></span><br>
+		</div>
+		<input type="submit" class="submit" id="submit"></Button>
+	</form>
+</body>
+</html>
